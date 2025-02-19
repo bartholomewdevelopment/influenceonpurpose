@@ -1,28 +1,59 @@
 .section1 {
-    display: flex;
-    width: 100%;
-    padding: 0px 0; /* Adds space between Hero and Section 1 */
-    position: relative; /* Ensures it follows the normal document flow */
-  }
-  
-  .text-box {
-    width: 30%;
-    background-color: #8F9C57;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .image-box {
-    width: 70%;
-  }
-  
+  display: flex;
+  width: 100%;
+  height: 40vh; /* Ensure correct height */
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0; /* Remove any unwanted margins */
+  padding: 0; /* Ensure no extra padding */
+}
+
+/* Text Box: Ensures full height and no extra padding */
+.text-box {
+  width: 40%;
+  height: 100%; /* Ensures it fills the full section height */
+  background-color: #8F9C57;
+  color: white;
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0; /* Remove any extra margins */
+  padding: 40px; /* Ensure proper padding */
+  box-sizing: border-box; /* Prevents extra spacing issues */
+}
+
+/* Ensures paragraphs are properly formatted */
+.text-box p {
+  max-width: 40%; /* Prevents overly wide paragraphs */
+  margin: 0; /* Removes any default paragraph margins */
+}
+
+/* Image Box: Parallax Effect */
+.image-box {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image fills the box */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+/* Parallax Effect on Scroll */
+@media (prefers-reduced-motion: no-preference) {
   .image-box img {
-    width: 100%;
-    height: auto;
-    display: block;
+      transform: translateY(calc(var(--scroll, 0) * 0.3));
   }
-  
+}

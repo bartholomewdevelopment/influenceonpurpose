@@ -1,27 +1,65 @@
 .section2 {
-    display: flex;
-    background-color: #5a3e2b; /* Dark Brown */
-    padding: 50px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  
-  .book-image img {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .book-info {
-    padding-left: 20px;
-    max-width: 500px;
-  }
-  
-  .learn-more {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  width: 100%;
+  height: 50vh; /* Adjusted height to avoid too much empty space */
+  background-color: #2e2e2e; /* Dark Brown */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Book Image Section (Left Side) */
+.book-image {
+  flex: 0.4; /* 40% width */
+  display: flex;
+  justify-content: flex-end; /* Pushes the image toward the text */
+}
+
+.book-image img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 5px; /* Optional for aesthetics */
+}
+
+/* Book Info Section (Right Side) */
+.book-info {
+  flex: 0.6; /* 60% width */
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.book-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 40%;
+}
+
+/* Learn More Button */
+.learn-more {
+  background-color: white;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  align-self: flex-start;
+}
+
+.learn-more:hover {
+  background-color: #8F9C57; /* Light Green on hover */
+  color: white;
+}
