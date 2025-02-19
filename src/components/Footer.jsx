@@ -18,12 +18,6 @@ const Footer = () => {
         {/* Right Side: Social Media & Email */}
         <div className="footer-section right">
           <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-twitter"></i>
-            </a>
             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
               <i className="bi bi-linkedin"></i>
             </a>
