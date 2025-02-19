@@ -1,0 +1,27 @@
+.section2 {
+    display: flex;
+    background-color: #5a3e2b; /* Dark Brown */
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .book-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .book-info {
+    padding-left: 20px;
+    max-width: 500px;
+  }
+  
+  .learn-more {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  

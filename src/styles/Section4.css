@@ -1,0 +1,13 @@
+.section4 {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    align-items: center;
+  }
+  
+  .principles-box {
+    background-color: lightgreen;
+    padding: 20px;
+    color: black;
+  }
+  

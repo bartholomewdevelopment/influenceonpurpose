@@ -1,0 +1,28 @@
+.section1 {
+    display: flex;
+    width: 100%;
+    padding: 0px 0; /* Adds space between Hero and Section 1 */
+    position: relative; /* Ensures it follows the normal document flow */
+  }
+  
+  .text-box {
+    width: 30%;
+    background-color: #8F9C57;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .image-box {
+    width: 70%;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
