@@ -1,0 +1,13 @@
+.section5 {
+    background-color: darkbrown;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
