@@ -14,8 +14,8 @@ const Section2 = () => {
       <div className="book-info">
         <h2>Now Available</h2>
         <p>
-          In this foundational new leadership culture book, decision makers will 
-          learn to build a regenerative culture that allows organizations to achieve 
+          In this foundational new Leadership Culture book, decision-makers will 
+          learn to build a "Regenerative Culture" that allows organizations to achieve 
           greater results by strengthening organizational integrity through 
           principle-based leadership.
         </p>

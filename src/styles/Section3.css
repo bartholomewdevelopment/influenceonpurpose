@@ -1,20 +1,232 @@
+/* Reset default margins/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Section styling */
 .section3 {
-    background-color: #5a3e2b;
-    padding: 50px;
-    text-align: center;
+  width: 100vw; /* Full viewport width */
+  min-height: 60vh; /* Flexible height, will adjust with content */
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2e2e2e; /* Dark gray across entire section */
+}
+
+/* Header styling (Meet the Team bar) */
+.section3 .header {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 80px;
+  background-color: #8F9C57; /* Light green background */
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Team content container */
+.section3 .team-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Team member styling */
+.section3 .team-member {
+  width: 40%; /* Increased from 35% for more space */
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* Team member image */
+.section3 .team-img {
+  width: 100%;
+  height: auto; /* Let height scale naturally */
+  max-height: 800px; /* Big pictures */
+  object-fit: contain; /* Show full image without cropping */
+  border-radius: 8px;
+}
+
+/* Text box inside team member */
+.section3 .text-box {
+  margin: 10px 0;
+}
+
+.section3 .text-box h3 {
+  font-size: 1.5rem;
+  margin: 5px 0;
+  color: white;
+}
+
+.section3 .text-box h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #d1d1d1;
+  margin: 5px 0;
+}
+
+.section3 .text-box p {
+  font-size: 1rem;
+  color: #d1d1d1;
+  margin: 10px 0;
+}
+
+/* Button wrapper */
+.section3 .button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Hero button styling */
+.section3 .hero-button {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width: 250px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Left section (80% width) */
+.section3 .hero-button span {
+  flex: 4;
+  padding: 10px 15px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* Right section (20% width) with arrow */
+.section3 .hero-button .arrow {
+  flex: 1;
+  background-color: #8F9C57;
+  color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 0 12px;
+}
+
+/* CTA styling - Thinner section */
+.section3 .cta {
+  width: 15%; /* Reduced from 20% to make it even thinner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section3 .cta p {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 0 10px;
+}
+
+.section3 .cta .cta-description {
+  font-size: 1rem;
+  color: #d1d1d1;
+}
+
+/* CTA button */
+.section3 .cta-button {
+  padding: 10px 20px;
+  background-color: #8F9C57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section3 {
+    min-height: auto; /* Let content dictate height */
   }
-  
-  .header {
-    background-color: lightgreen;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .team-content {
-    display: flex;
-    justify-content: space-around;
+
+  .section3 .team-content {
+    flex-direction: column;
     align-items: center;
-    color: white;
+    padding: 20px;
   }
-  
+
+  .section3 .team-member,
+  .section3 .cta {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+    padding: 20px; /* Consistent padding */
+  }
+
+  .section3 .team-img {
+    height: auto;
+    max-height: 600px; /* Still big on mobile */
+  }
+
+  .section3 .hero-button {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+
+  .section3 .hero-button .arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .section3 .header {
+    font-size: 1.5rem;
+    padding: 40px; /* Reduced padding */
+  }
+
+  .section3 .text-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .section3 .text-box h4 {
+    font-size: 1rem;
+  }
+
+  .section3 .text-box p {
+    font-size: 0.9rem;
+  }
+
+  .section3 .cta p {
+    font-size: 1rem;
+  }
+
+  .section3 .cta .cta-description {
+    font-size: 0.9rem;
+  }
+
+  .section3 .hero-button {
+    width: 180px;
+    font-size: 1rem;
+  }
+
+  .section3 .hero-button .arrow {
+    font-size: 1.2rem;
+  }
+}

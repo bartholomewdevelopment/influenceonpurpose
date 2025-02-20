@@ -1,52 +1,112 @@
-.section1 {
-  display: flex;
-  width: 100%;
-  height: 40vh; /* The section is short */
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+/* Reset default margins/padding */
+html, body {
   margin: 0;
   padding: 0;
 }
 
-/* Text Box */
-.text-box {
-  width: 40%;
-  height: 100%;
-  background-color: #8F9C57;
-  color: white;
+/* Section styling */
+.section1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vw; /* Full viewport width */
+  min-height: 40vh; /* Flexible height */
+  align-items: stretch; /* Children stretch to fill height */
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+}
+
+/* Text Box (30%) - Scoped to .section1 */
+.section1 .text-box {
+  width: 30%; /* 30% of section width */
+  background-color: #8F9C57; /* Light green background */
+  color: white; /* White text */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically within text-box */
+  align-items: flex-start; /* Align text to the left */
   text-align: left;
   font-size: 1.2rem;
   line-height: 1.6;
-  margin: 0;
-  padding: 40px;
+  font-weight: bold; /* Bold text */
+  padding: 100px;
   box-sizing: border-box;
 }
 
-.text-box p {
-  max-width: 40%;
-  margin: 0;
-}
-
-/* Image Box */
-.image-box {
-  width: 60%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Ensure Image is Constrained & Moves */
-.image-box img {
+/* Ensure text background matches container - Scoped */
+.section1 .text-box p {
+  margin: 0 0 20px 0; /* Space between paragraphs, no bottom margin on last */
   width: 100%;
-  height: 120%; /* Allows movement without revealing empty space */
-  object-fit: cover;
+  background-color: #8F9C57; /* Reinforce light green background */
+}
+
+.section1 .text-box p:last-child {
+  margin-bottom: 0; /* Remove bottom margin from last paragraph */
+}
+
+/* Image Box (70%) - Scoped */
+.section1 .image-box {
+  width: 70%; /* 70% of section width */
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Ensure image stretches */
+}
+
+/* Image styling - Scoped */
+.section1 .image-box img {
+  width: 100%; /* Full width of its container */
+  height: 100%; /* Full height of its container */
+  object-fit: cover; /* Cover the area, cropping if needed */
   position: absolute;
-  top: -10%; /* Start a bit higher so it has room to move */
+  top: 0;
   left: 0;
-  transform: translateY(0);
-  transition: transform 0.1s linear;
+  display: block;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section1 {
+    flex-direction: column; /* Stack vertically */
+    min-height: 60vh;
+  }
+
+  .section1 .text-box {
+    width: 100%; /* Full width on mobile */
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #8F9C57; /* Ensure background persists */
+  }
+
+  .section1 .text-box p {
+    margin: 0 0 15px 0; /* Slightly less space on mobile */
+    background-color: #8F9C57;
+  }
+
+  .section1 .text-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  .section1 .image-box {
+    width: 100%; /* Full width on mobile */
+    height: 50vh; /* Fixed height */
+  }
+
+  .section1 .image-box img {
+    width: 100%; /* Full width */
+    height: 100%; /* Fit container */
+    top: 0;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .section1 .text-box {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .section1 .image-box {
+    height: 40vh;
+  }
 }
