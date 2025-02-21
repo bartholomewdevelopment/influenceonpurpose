@@ -1,13 +1,101 @@
 .section4 {
-    display: flex;
-    width: 100%;
-    padding: 50px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 400px;
+}
+
+.section4 .left-side,
+.section4 .right-side {
+  flex: 1 0 50%;
+  min-width: 300px; /* For mobile stacking */
+}
+
+.section4 .left-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.section4 .right-side {
+  background-color: #8f9c57; /* Olive green */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.section4 .right-side h2 {
+  font-family: Arial, sans-serif;
+  font-size: 48px; /* Huge */
+  font-weight: bold;
+  color: #fff; /* White */
+  margin-bottom: 15px;
+  width: 60%; /* Fixed width */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto;
+}
+
+.section4 .right-side .quote {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 24px; /* Slightly smaller than h2 */
+  color: #fff; /* White */
+  margin-bottom: 30px;
+  width: 50%; /* Fixed width */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto;
+}
+
+.section4 .right-side .principle {
+  background-color: #bfc89d; /* Lighter green for ovals */
+  border-radius: 50px; /* Oval shape */
+  padding: 15px;
+  margin: 10px auto;
+  width: 50%; /* Fixed width for consistency */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle lift */
+  display: flex;
+  align-items: center;
+}
+
+.section4 .right-side .principle .number {
+  font-family: Arial, sans-serif;
+  font-size: 60px; /* Huge numbering */
+  font-weight: bold;
+  color: #fff; /* White */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Big drop shadow */
+  margin-left: 20px; /* Added left-side spacing */
+  margin-right: 20px; /* Existing right-side spacing */
+  flex-shrink: 0; /* Prevents number from shrinking */
+}
+
+.section4 .right-side .principle .principle-content {
+  text-align: left; /* Left-justify content */
+  flex-grow: 1; /* Takes up remaining space */
+  color: #fff; /* White for all text inside */
+}
+
+.section4 .right-side .principle .principle-content strong {
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff; /* White */
+  display: block;
+}
+
+.section4 .right-side .principle .principle-content p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #fff; /* White */
+  margin: 5px 0 0;
+  word-wrap: break-word; /* Ensures text wraps */
+}
+
+@media (max-width: 768px) {
+  .section4 .left-side,
+  .section4 .right-side {
+    flex: 1 0 100%;
   }
-  
-  .principles-box {
-    background-color: lightgreen;
-    padding: 20px;
-    color: black;
-  }
-  
+}
