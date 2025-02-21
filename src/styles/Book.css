@@ -1,0 +1,228 @@
+/* Book.css */
+.book-marketing {
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .book-marketing .hero-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px; /* Adjust to match your header height */
+  }
+  
+  .book-marketing .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Header Section */
+  .book-marketing .book-header {
+    padding: 2rem 0;
+  }
+  
+  .book-marketing .book-header h1 {
+    font-size: 3.5rem;
+    color: #2e2e2e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-marketing .book-header h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .book-marketing .availability {
+    font-size: 1.3rem;
+    color: #777;
+  }
+  
+  /* Main Content */
+  .book-marketing .book-content {
+    max-width: none;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+  }
+  
+  .book-marketing .book-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  
+  .book-marketing .book-image {
+    flex-shrink: 0;
+  }
+  
+  .book-marketing .book-image a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .book-marketing .book-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .book-marketing .book-details {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .book-marketing .main-description {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .book-marketing .book-details h3 {
+    font-size: 2rem;
+    color: #2e2e2e;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .book-marketing .book-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .book-marketing .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .book-marketing .buy-btn,
+  .book-marketing .audible-btn {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .book-marketing .buy-btn {
+    background-color: #8F9C57;
+    color: white;
+  }
+  
+  .book-marketing .buy-btn:hover {
+    background-color: #7A853A;
+  }
+  
+  .book-marketing .audible-btn {
+    background-color: #f7a501;
+    color: #fff;
+  }
+  
+  .book-marketing .audible-btn:hover {
+    background-color: #d99000;
+  }
+  
+  /* Testimonials */
+  .book-marketing .testimonials {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+  }
+  
+  .book-marketing .testimonials h3 {
+    font-size: 2rem;
+    color: #2e2e2e;
+    margin-bottom: 2rem;
+  }
+  
+  .book-marketing .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .book-marketing .testimonial-item {
+    text-align: left;
+  }
+  
+  .book-marketing .testimonial-item blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-marketing .testimonial-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .book-marketing .hero-section {
+      margin-top: 60px; /* Adjust for mobile header height */
+    }
+  
+    .book-marketing .book-header {
+      padding: 1rem 0;
+    }
+  
+    .book-marketing .book-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .book-marketing .book-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .book-marketing .availability {
+      font-size: 1.1rem;
+    }
+  
+    .book-marketing .book-content {
+      padding: 0 1rem;
+      margin: 0 auto 2rem;
+    }
+  
+    .book-marketing .book-details-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .book-marketing .book-image img {
+      max-width: 500px;
+    }
+  
+    .book-marketing .book-details {
+      text-align: center;
+    }
+  
+    .book-marketing .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .book-marketing .buy-btn,
+    .book-marketing .audible-btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .book-marketing .testimonials {
+      padding: 0 1rem;
+      margin: 2rem auto;
+    }
+  
+    .book-marketing .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,4 +1,6 @@
+// Section2.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "../styles/Section2.css";
 import bookImage from "../assets/images/book.jpg"; // Ensure correct path
 
@@ -19,7 +21,7 @@ const Section2 = () => {
           greater results by strengthening organizational integrity through 
           principle-based leadership.
         </p>
-        <button className="learn-more">Learn More</button>
+        <Link to="/book" className="learn-more">Learn More</Link>
       </div>
     </section>
   );
