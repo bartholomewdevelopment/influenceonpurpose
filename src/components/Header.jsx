@@ -1,11 +1,14 @@
+// Header.jsx
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/Header.css";
 import logo from "../assets/logos/iopwhitelogo.png";
 
 const Header = () => {
+  const location = useLocation(); // Get current path
+
   return (
     <header className="header-container">
       <div className="header-content">
@@ -32,54 +35,34 @@ const Header = () => {
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/">
+                <Link className={`nav-link text-white ${location.pathname === "/" ? "active" : ""}`} to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/book">
+                <Link className={`nav-link text-white ${location.pathname === "/book" ? "active" : ""}`} to="/book">
                   Book
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/about">
-                  About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white" to="/what-we-do">
+                <Link className={`nav-link text-white ${location.pathname === "/what-we-do" ? "active" : ""}`} to="/what-we-do">
                   What We Do
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-white" to="/who-we-are">
+                <Link className={`nav-link text-white ${location.pathname === "/who-we-are" ? "active" : ""}`} to="/who-we-are">
                   Who We Are
                 </Link>
               </li>
-              {/* Dropdown for More */}
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="moreDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <Link className="dropdown-item" to="/resources">
-                      Resources
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/contact">
-                      Contact Us
-                    </Link>
-                  </li>
-                </ul>
+              <li className="nav-item">
+                <Link className={`nav-link text-white ${location.pathname === "/resources" ? "active" : ""}`} to="/resources">
+                  Resources
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className={`nav-link text-white ${location.pathname === "/contact" ? "active" : ""}`} to="/contact">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

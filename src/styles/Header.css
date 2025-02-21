@@ -1,38 +1,39 @@
+/* Header.css */
 /* Full-Width Header with Transparent Background */
 .header-container {
-  width: 100vw; /* Full width of the viewport */
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed; /* Sticks to top */
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(46, 46, 46, 0.9); /* Transparent Gray */
   padding: 0;
-  height: 80px; /* Adjust height as needed */
-  z-index: 1000; /* Ensures it's above other content */
+  height: 80px;
+  z-index: 1000;
 }
 
 /* Ensure content starts below the fixed header */
 .main-content {
-  margin-top: 80px; /* Pushes all sections down */
+  margin-top: 80px;
 }
 
 /* Header Content: Logo and Navbar Side by Side */
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures space between logo & nav */
+  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  padding: 0 20px; /* Prevents elements from touching edges */
+  padding: 0 20px;
 }
 
 /* Logo Section */
 .logo-container {
   display: flex;
   align-items: center;
-  padding-right: 50px; /* Increased padding for spacing */
+  padding-right: 50px;
 }
 
 .logo-img {
@@ -57,7 +58,7 @@
 }
 
 .navbar-nav .nav-item {
-  padding: 0 8px;
+  padding: 0 10px; /* Slightly increased from 8px for six items */
 }
 
 .navbar-nav .nav-link {
@@ -69,23 +70,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: black; /* Turns black on hover */
-}
-
-/* Dropdown Styling */
-.dropdown-menu {
-  background-color: white;
-  border-radius: 5px;
-}
-
-.dropdown-menu .dropdown-item {
   color: black;
-  font-size: 14px;
-}
-
-.dropdown-menu .dropdown-item:hover {
-  background-color: #8F9C57;
-  color: white;
 }
 
 /* LinkedIn Icon (Top Right) */
@@ -102,19 +87,21 @@
   color: #0077b5; /* LinkedIn Blue */
 }
 
-/* Mobile Navigation (Optional) */
-.menu-icon {
-  display: none; /* Hidden by default */
-}
-
-/* Responsive Design */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   .navbar-nav {
-      display: none; /* Hide nav links on small screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
   }
 
-  .menu-icon {
-      display: block; /* Show menu icon for mobile */
+  .navbar-nav .nav-item {
+    padding: 5px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px; /* Slightly larger for mobile readability */
   }
 }
 
@@ -123,4 +110,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Active Page Indicator */
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2); /* Light Transparent White */
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-weight: bold;
 }
