@@ -1,0 +1,90 @@
+/* Section6.css */
+.section6 {
+    position: relative;
+    padding: 4rem 2rem;
+    min-height: 500px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+                url('/path-to-meeting-image.jpg') center/cover no-repeat;
+  }
+  
+  .book-now-container {
+    margin-bottom: 3rem;
+  }
+  
+  .book-now-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #8F9C57; /* Your specified color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .book-now-link:hover {
+    background-color: #7A853A; /* Darkened version of #8F9C57 for hover */
+  }
+  
+  .book-now-info {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .testimonials-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonials-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial {
+    padding: 2rem;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .testimonial blockquote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  .author {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section6 {
+      padding: 2rem 1rem;
+    }
+    
+    .testimonials-container h2 {
+      font-size: 2rem;
+    }
+    
+    .testimonial blockquote {
+      font-size: 1rem;
+    }
+  }

@@ -1,0 +1,51 @@
+/* Section7.css */
+.section7 {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .section7 h2 {
+    color: #000;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  
+  .logos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .client-logo {
+    max-width: 150px; /* Adjust based on your logo sizes */
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .logo-row {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    
+    .client-logo {
+      max-width: 120px;
+    }
+    
+    .section7 {
+      padding: 2rem 1rem;
+    }
+    
+    .section7 h2 {
+      font-size: 2rem;
+    }
+  }
