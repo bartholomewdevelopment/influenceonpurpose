@@ -16,9 +16,8 @@ const Section3 = () => {
           <div className="text-box">
             <h3>John Baker</h3>
             <h4>Founder and Managing Partner</h4>
-            <p>
-              John is the Founder and Managing Partner of Influence On Purpose. 
-              He is a member of the Human Capital Institute and is a certified Master Human Capital Strategist.
+            
+              <p>John is a member of the Human Capital Institute and is a certified Master Human Capital Strategist.
             </p>
           </div>
           <div className="button-wrapper">
@@ -33,7 +32,7 @@ const Section3 = () => {
         <div className="cta">
           <p>Learn More</p>
           <p className="cta-description">
-            If you are interested and want to learn more, we'd be happy to talk with you. Click below to book a free Discovery Call
+            If you are interested and want to learn more, we'd be happy to talk with you. Click below to book a free Discovery Call.
           </p>
           <div className="button-wrapper">
             <button className="cta-button">Book Now</button>
@@ -47,8 +46,8 @@ const Section3 = () => {
             <h3>Rebekah Eyre</h3>
             <h4>Leadership and Executive Coach</h4>
             <p>
-              Rebekah is a Leadership and Executive Coach with Influence On Purpose 
-              with a Graduate Certificate in Executive Coaching from American Public University System.
+               
+              Rebekah has a Graduate Certificate in Executive Coaching from American Public University System.
             </p>
           </div>
           <div className="button-wrapper">
