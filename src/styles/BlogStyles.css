@@ -3,6 +3,7 @@
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
+    padding-top: 80px; /* Same adjustment for consistency */
   }
   
   .blog-list h2 {
@@ -58,6 +59,7 @@
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
+    padding-top: 80px; /* Adjust this value to match your header + navbar height */
   }
   
   .blog-post-detail article {

@@ -3,14 +3,6 @@ import '../styles/BlogStyles.css';
 import blogarrow2 from '../assets/images/blogarrow2.jpg';
 import { Helmet } from 'react-helmet';
 
-// Inside BlogPost
-<Helmet>
-  <meta property="og:title" content={post.title} />
-  <meta property="og:url" content={blogUrl} />
-  <meta property="og:image" content={imageMap[post.image] || post.image} />
-  <meta property="og:description" content={post.excerpt || 'Check out this blog post!'} />
-</Helmet>
-
 const BlogPost = ({ post }) => {
   const renderContent = (content) => {
     const normalizedContent = content.replace(/(\r\n|\r|\n)/g, '\n').trim();
@@ -47,6 +39,14 @@ const BlogPost = ({ post }) => {
 
   return (
     <article>
+      {/* Move Helmet inside the component */}
+      <Helmet>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:url" content={blogUrl} />
+        <meta property="og:image" content={imageMap[post.image] || post.image} />
+        <meta property="og:description" content={post.excerpt || 'Check out this blog post!'} />
+      </Helmet>
+
       {post.image && (
         <div className="featured-image">
           <img src={imageMap[post.image] || post.image} alt={post.title} />
@@ -62,7 +62,7 @@ const BlogPost = ({ post }) => {
       {/* Share Buttons with Refined URLs */}
       <div className="share-buttons">
         <a
-          href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedTitle}`}
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&t=${encodedTitle}`}
           target="_blank"
           rel="noopener noreferrer"
           className="share-button facebook"

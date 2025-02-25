@@ -5,7 +5,7 @@ import '../styles/BlogStyles.css';
 const BlogList = ({ posts }) => {
   return (
     <div className="blog-list">
-      <h2>Blog Posts</h2>
+      <h2>Regenerative Culture Resources</h2>
       {posts.map((post) => (
         <div key={post.id} className="blog-preview">
           {post.image && (
