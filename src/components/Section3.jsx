@@ -56,16 +56,23 @@ A former Staff Sergeant of the U.S. Marine Corps, Rebekah is experienced in lead
           </div>
         </div>
 
-        {/* Book Ad (CTA) Section */}
-        <div className="cta">
+                {/* Book Ad (CTA) Section */}
+                <div className="cta">
           <p>Learn More</p>
           <p className="cta-description">
             If you are interested and want to learn more, we'd be happy to talk with you. Click below to book a free Discovery Call.
           </p>
           <div className="button-wrapper">
-            <button className="cta-button">Book Now</button>
+            <a
+              href="https://calendly.com/johniop/discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="cta-button">Book Now</button>
+            </a>
           </div>
         </div>
+
 
         {/* Rebekah Eyre Section */}
         <div className="team-member">

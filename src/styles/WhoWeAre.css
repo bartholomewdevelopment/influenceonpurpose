@@ -13,7 +13,7 @@
     position: relative;
     width: 100%;
     min-height: 600px;
-
+    margin-top: 80px; /* Offset for fixed header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,10 +107,9 @@
     margin-right: auto;
   }
   
-  /* Adjusted Video Container */
   .video-container {
     position: relative;
-    padding-bottom: 45%; /* Reduced height (from 56.25%) */
+    padding-bottom: 45%; /* Reduced height */
     height: 0;
     margin: 0 auto;
     max-width: 600px; /* Smaller max-width */
@@ -124,28 +123,34 @@
     height: 100%;
   }
   
-  /* VALUES SECTION */
+  /* VALUES SECTION - Enhanced to Match Mission/Vision Styling */
   .values-section {
     width: 100%;
-    padding: 60px 20px;
-    background-color: #fff;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #6D7A43, #8F9C57);
+    color: white;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
   }
   
   .values-section h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #8F9C57;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   }
   
   .values-section p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 40px;
-    line-height: 1.6;
   }
   
-  /* Use flex to create two rows: top row (3 items) and bottom row (2 items) */
+  /* Flex container for the value cards */
   .values-list {
     display: flex;
     flex-wrap: wrap;
@@ -156,15 +161,17 @@
     margin: 0 auto;
   }
   
+  /* Individual value cards styled as translucent panels */
   .value-item {
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.9); /* Translucent white */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
-    width: 30%; /* Forces about 3 per row on wide screens */
+    width: 30%; /* Approximately 3 per row on wide screens */
     min-width: 250px;
+    color: #333;
   }
   
   .value-item:hover {
@@ -183,8 +190,8 @@
     line-height: 1.6;
   }
   
-/* MISSION SECTION - Enhanced */
-.mission-section {
+  /* MISSION SECTION - Enhanced */
+  .mission-section {
     width: 100%;
     padding: 80px 20px;
     background: linear-gradient(135deg, #6D7A43, #8F9C57);
@@ -202,7 +209,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* A subtle dark overlay to add depth without changing color too much */
     background: rgba(0, 0, 0, 0.1);
     pointer-events: none;
   }
@@ -260,14 +266,13 @@
     max-width: 800px;
   }
   
-  
-  /* Remove extra spacing between sections (no white bars) */
+  /* Remove extra spacing between sections */
   section {
     margin: 0;
     padding: 0;
   }
   
-  /* (Optional) Responsive adjustments for smaller screens */
+  /* Responsive adjustments for smaller screens */
   @media (max-width: 768px) {
     .significance-content {
       flex-direction: column;
