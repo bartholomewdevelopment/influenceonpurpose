@@ -1,0 +1,283 @@
+/* General styling for WhoWeAre page */
+.who-we-are {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* HERO SECTION */
+  .who-we-are-hero {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .who-we-are-hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  }
+  
+  .who-we-are-hero-text {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* SIGNIFICANCE OF A NAME SECTION */
+  .significance-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .significance-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .significance-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .significance-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8F9C57;
+  }
+  
+  .significance-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .significance-image {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .significance-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* THE LIVING TREE MODEL SECTION */
+  .living-tree-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f0f4eb;
+    text-align: center;
+  }
+  
+  .living-tree-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8F9C57;
+  }
+  
+  .living-tree-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Adjusted Video Container */
+  .video-container {
+    position: relative;
+    padding-bottom: 45%; /* Reduced height (from 56.25%) */
+    height: 0;
+    margin: 0 auto;
+    max-width: 600px; /* Smaller max-width */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* VALUES SECTION */
+  .values-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .values-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8F9C57;
+  }
+  
+  .values-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  /* Use flex to create two rows: top row (3 items) and bottom row (2 items) */
+  .values-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .value-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    width: 30%; /* Forces about 3 per row on wide screens */
+    min-width: 250px;
+  }
+  
+  .value-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  .value-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #8F9C57;
+  }
+  
+  .value-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+/* MISSION SECTION - Enhanced */
+.mission-section {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #6D7A43, #8F9C57);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .mission-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* A subtle dark overlay to add depth without changing color too much */
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+  }
+  
+  .mission-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .mission-section p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 20px;
+  }
+  
+  /* VISION SECTION - Enhanced */
+  .vision-section {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #8F9C57, #6D7A43);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .vision-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+  }
+  
+  .vision-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .vision-section p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  
+  /* Remove extra spacing between sections (no white bars) */
+  section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* (Optional) Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .significance-content {
+      flex-direction: column;
+    }
+    .values-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    .value-item {
+      width: 80%;
+    }
+  }
+  

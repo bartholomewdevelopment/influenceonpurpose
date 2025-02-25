@@ -232,3 +232,81 @@ html, body {
     font-size: 1.2rem;
   }
 }
+
+/* Modal Overlay */
+.team-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+/* Modal Container */
+.team-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+/* Close Button */
+.team-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Modal Image */
+.team-modal-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Modal Headings */
+.team-modal h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.team-modal h3 {
+  font-size: 1.2rem;
+  color: #8F9C57;
+  margin-bottom: 15px;
+}
+
+/* Modal Paragraph */
+.team-modal p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Modal Link */
+.team-modal-link {
+  font-size: 1rem;
+  color: #8F9C57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.team-modal-link:hover {
+  text-decoration: underline;
+}

@@ -14,6 +14,7 @@ import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Book from "./pages/Book";
 import WhatWeDo from "./pages/WhatWeDo";
+import WhoWeAre from "./pages/WhoWeAre";
 import "./index.css";
 
 // Home component (wrapped in a container)
@@ -40,7 +41,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/book" element={<Book />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
-          <Route path="/who-we-are" element={<div>Who We Are (TBD)</div>} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/resources" element={<div>Resources (TBD)</div>} />
           <Route path="/contact" element={<div>Contact Us (TBD)</div>} />
         </Routes>
