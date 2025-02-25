@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Section5.css";
 import oneonone from "../assets/images/oneonone.jpeg";
 import execTeam from "../assets/images/executiveteamcoaching.jpeg";
@@ -15,7 +16,7 @@ const options = [
 const Section5 = () => {
   return (
     <section className="section5">
-      <h2 className="header">What You Receive</h2> {/* Moved outside content-wrapper */}
+      <h2 className="header">What You Receive</h2>
       <div className="content-wrapper">
         <div className="options-grid">
           {options.map((option, index) => (
@@ -38,10 +39,12 @@ const Section5 = () => {
                 </svg>
               </div>
               <div className="caption">{option.caption}</div>
-              <button className="hero-button">
-                <span>Learn More</span>
-                <span className="arrow">→</span>
-              </button>
+              <Link to="/what-we-do">
+                <button className="hero-button">
+                  <span>Learn More</span>
+                  <span className="arrow">→</span>
+                </button>
+              </Link>
             </div>
           ))}
         </div>

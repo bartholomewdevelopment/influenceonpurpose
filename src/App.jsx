@@ -1,6 +1,6 @@
 // App.jsx
 import React from "react";
-import { Route, Routes } from "react-router-dom"; // Remove BrowserRouter import
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -13,9 +13,10 @@ import Section6 from "./components/Section6";
 import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Book from "./pages/Book";
+import WhatWeDo from "./pages/WhatWeDo";
 import "./index.css";
 
-// Home component to keep existing sections together
+// Home component (wrapped in a container)
 const Home = () => (
   <div className="main-content">
     <Hero />
@@ -33,22 +34,17 @@ const Home = () => (
 function App() {
   return (
     <>
-      {/* Fixed Header */}
       <Header />
-
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/book" element={<Book />} />
-        {/* Add other routes from your Header.jsx */}
-        <Route path="/about" element={<div>About Us (TBD)</div>} />
-        <Route path="/what-we-do" element={<div>What We Do (TBD)</div>} />
-        <Route path="/who-we-are" element={<div>Who We Are (TBD)</div>} />
-        <Route path="/resources" element={<div>Resources (TBD)</div>} />
-        <Route path="/contact" element={<div>Contact Us (TBD)</div>} />
-      </Routes>
-
-      {/* Footer */}
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/book" element={<Book />} />
+          <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/who-we-are" element={<div>Who We Are (TBD)</div>} />
+          <Route path="/resources" element={<div>Resources (TBD)</div>} />
+          <Route path="/contact" element={<div>Contact Us (TBD)</div>} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

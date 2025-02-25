@@ -1,5 +1,6 @@
 // components/Hero.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Hero.css";
 import heroImage from "../assets/images/hero.png"; // Ensure correct path
 
@@ -8,12 +9,12 @@ const Hero = () => {
     <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
       <div className="hero-left">
         <h1>Regenerative Culture, Strategy & Leadership Development</h1>
-        <button className="hero-button">
+        <Link to="/what-we-do" style={{ textDecoration: "none" }}>
+          <button className="hero-button">
             <span>Learn More</span>
             <span className="arrow">→</span>
-        </button>
-
-
+          </button>
+        </Link>
       </div>
     </section>
   );

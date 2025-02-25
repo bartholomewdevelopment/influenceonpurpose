@@ -1,0 +1,309 @@
+/* General Styling */
+.what-we-do-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Hero Section */
+.what-we-do-hero {
+  position: relative;
+  width: 100%;
+  min-height: 600px;           /* Ensures the hero is at least 600px tall */
+            /* Offset for the fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: url('../assets/images/whatwedohero.jpg') center/cover no-repeat;
+}
+
+
+.what-we-do-hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+}
+
+.what-we-do-hero-text {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Intro Header Section */
+.what-we-do-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f4eb;
+}
+
+.what-we-do-intro-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.what-we-do-intro-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Button Container for consistent spacing */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Fixed distance between buttons; adjust as needed */
+  align-items: center;
+}
+
+/* Remove margin-top from buttons (or override them when inside .button-container) */
+.what-we-do-button,
+.what-we-do-learn-more-button {
+  margin-top: 0;  /* Remove any individual top margin */
+}
+
+/* Services Section */
+.what-we-do-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  padding: 50px 80px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+/* Service Card */
+.what-we-do-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.what-we-do-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.what-we-do-card-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.what-we-do-card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.what-we-do-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+/* Primary Button */
+.what-we-do-button {
+  background: #8F9C57;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 15px;
+  width: 80%;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.what-we-do-button:hover {
+  background-color: #7a8a4f;
+  transform: scale(1.02);
+}
+
+/* Redesigned Learn More Button */
+.what-we-do-learn-more-button {
+  position: relative;
+  overflow: hidden;
+  background: none;
+  border: 2px solid #8F9C57;
+  color: #8F9C57;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 15px;
+}
+
+.what-we-do-learn-more-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #8F9C57;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.what-we-do-learn-more-button:hover {
+  color: white;
+}
+
+.what-we-do-learn-more-button:hover::after {
+  transform: scaleX(1);
+}
+
+.arrow-icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.what-we-do-learn-more-button:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* Modal Overlay */
+.what-we-do-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(143, 156, 87, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal Box */
+.what-we-do-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  animation: scaleIn 0.3s ease;
+}
+
+/* Close Button in Modal */
+.what-we-do-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Secondary Button (Close button in modal actions) - less prominent */
+.what-we-do-button.secondary {
+  background: transparent;
+  color: #8F9C57;
+  border: 2px solid #8F9C57;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  width: auto;
+  margin-top: 15px;
+}
+
+.what-we-do-button.secondary:hover {
+  background: #8F9C57;
+  color: white;
+  transform: none;
+}
+
+/* Modal Title */
+.what-we-do-modal-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Modal Content */
+.what-we-do-modal-content {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Modal Actions */
+.what-we-do-modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); }
+  to { transform: scale(1); }
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+  .what-we-do-services {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .what-we-do-services {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  
+  .what-we-do-card {
+    width: 100%;
+  }
+  
+  .what-we-do-button,
+  .what-we-do-learn-more-button {
+    width: 100%;
+  }
+}
