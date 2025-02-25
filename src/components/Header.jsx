@@ -59,11 +59,11 @@ const Header = () => {
                   Resources
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className={`nav-link text-white ${location.pathname === "/contact" ? "active" : ""}`} to="/contact">
                   Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

@@ -1,0 +1,329 @@
+/* Blog list styles */
+.blog-list {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .blog-list h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .blog-preview {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .blog-preview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-preview h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
+  
+  .blog-preview h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .blog-preview h3 a:hover {
+    color: #3498db;
+  }
+  
+  .blog-preview p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 10px;
+  }
+  
+  .blog-preview small {
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  /* Blog post detail styles */
+  .blog-post-detail {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .blog-post-detail article {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .blog-post-detail h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+  }
+  
+  .post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .post-meta small {
+    margin-right: 15px;
+  }
+  
+  .blog-content {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 40px 0 20px;
+  }
+  
+  .blog-content h4 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #34495e;
+    margin: 30px 0 15px;
+  }
+  
+  .blog-content p {
+    margin-bottom: 20px;
+  }
+  
+  .blog-content .image-placeholder {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    margin: 30px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-list,
+    .blog-post-detail {
+      padding: 0 15px;
+    }
+  
+    .blog-list h2,
+    .blog-post-detail h1 {
+      font-size: 2rem;
+    }
+  
+    .blog-preview h3 {
+      font-size: 1.25rem;
+    }
+  
+    .blog-content {
+      font-size: 1rem;
+    }
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .post-meta small {
+    margin-right: 15px;
+  }
+  
+  .post-meta .byline {
+    font-style: italic;
+    color: #555;
+  }
+
+  .blog-container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .blog-sidebar {
+    flex: 0 0 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .blog-sidebar h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .blog-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .blog-sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .blog-sidebar a {
+    color: #34495e;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .blog-sidebar a:hover {
+    color: #3498db;
+  }
+  
+  .blog-main {
+    flex: 1;
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .blog-container {
+      flex-direction: column;
+    }
+  
+    .blog-sidebar {
+      flex: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  .featured-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 30px;
+  }
+  
+  .featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .blog-preview {
+    display: flex; /* Use flexbox to align image and content */
+    align-items: flex-start; /* Align top of image and text */
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .blog-preview-image {
+    flex: 0 0 150px; /* Fixed width for image container */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .blog-preview-image .thumbnail {
+    width: 100%;
+    height: 100px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop image to fit */
+    border-radius: 4px; /* Slight rounding */
+  }
+  
+  .blog-preview-content {
+    flex: 1; /* Take remaining space */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .blog-preview {
+      flex-direction: column; /* Stack image and content on mobile */
+    }
+  
+    .blog-preview-image {
+      margin-right: 0;
+      margin-bottom: 15px;
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .blog-preview-image .thumbnail {
+      height: 150px; /* Larger height on mobile */
+    }
+  }
+
+  /* Add to BlogStyles.css */
+.share-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .share-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px; /* Matches your rounded corners */
+    background-color: #2c3e50; /* Default dark color from your palette */
+    transition: background-color 0.2s ease;
+  }
+  
+  .share-button:hover {
+    background-color: #3498db; /* Hover color from your links */
+  }
+  
+  .share-button.facebook {
+    background-color: #3b5998;
+  }
+  .share-button.facebook:hover {
+    background-color: #2d4373;
+  }
+  
+  .share-button.linkedin {
+    background-color: #0077b5;
+  }
+  .share-button.linkedin:hover {
+    background-color: #005582;
+  }
+  
+  .share-button.email {
+    background-color: #666;
+  }
+  .share-button.email:hover {
+    background-color: #4d4d4d;
+  }
+  
+  .share-button.sms {
+    background-color: #28a745;
+    display: none; /* Hidden on desktop by default */
+  }
+  .share-button.sms:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Show SMS only on mobile */
+  @media (max-width: 768px) {
+    .share-button.sms {
+      display: inline-block;
+    }
+  }

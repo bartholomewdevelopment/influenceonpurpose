@@ -8,7 +8,7 @@
   .book-marketing .hero-section {
     width: 100%;
     overflow: hidden;
-    margin-top: 80px; /* Adjust to match your header height */
+    /* margin-top: 80px; Adjust to match your header height */
   }
   
   .book-marketing .hero-image {

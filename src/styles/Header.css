@@ -1,4 +1,5 @@
 /* Header.css */
+
 /* Full-Width Header with Transparent Background */
 .header-container {
   width: 100vw;
@@ -14,9 +15,9 @@
   z-index: 1000;
 }
 
-/* Ensure content starts below the fixed header */
+/* No margin-top needed since hero starts at top */
 .main-content {
-  margin-top: 80px;
+  margin-top: 0;
 }
 
 /* Header Content: Logo and Navbar Side by Side */
@@ -90,18 +91,18 @@
 /* Mobile Navigation */
 @media (max-width: 768px) {
   .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
   }
 
   .navbar-nav .nav-item {
-    padding: 5px 0;
+      padding: 5px 0;
   }
 
   .navbar-nav .nav-link {
-    font-size: 16px; /* Slightly larger for mobile readability */
+      font-size: 16px; /* Slightly larger for mobile readability */
   }
 }
 
