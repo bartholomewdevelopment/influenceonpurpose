@@ -1,116 +1,97 @@
-/* Reset all padding and margins to ensure full width */
+/* Reset defaults for consistency */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Ensure the footer spans the full width */
+/* Base Footer Styles (Mobile-First) */
 .footer-container {
-  width: 100%; /* Full width of the parent container */
-  background-color: black;
-  color: white;
+  width: 100%;
+  background-color: #000; /* Black background */
+  color: #fff;
+  padding: 20px 0; /* Vertical padding only */
   display: flex;
-  justify-content: center; /* Center content within the footer */
+  flex-direction: column;
   align-items: center;
-  padding: 20px 0;
-  margin: 0;
   position: relative;
-  left: 0;
-  bottom: 0;
-  flex-shrink: 0; /* Prevents shrinking */
+  flex-shrink: 0;
 }
 
-/* Footer Content: Centers and extends fully */
+/* Footer Content */
 .footer-content {
+  width: 100%;
+  max-width: 1200px; /* Caps width on large screens */
+  padding: 0 15px; /* Horizontal padding for mobile */
   display: flex;
-  justify-content: space-between; /* Distributes left & right sections */
+  flex-direction: column; /* Stack vertically on mobile */
   align-items: center;
-  width: 100%; /* Ensures it takes up full width */
-  max-width: 1200px; /* Prevents it from being too wide on large screens */
-  padding: 0 20px; /* Adds padding to prevent edge overlap */
+  gap: 20px; /* Space between sections */
 }
 
-/* Left Section: Logo & Copyright */
+/* Generic Footer Section (Blank Sections) */
+.footer-section {
+  display: none; /* Hide blank sections on mobile by default */
+}
+
+/* Left Section (Logo & Copyright) */
 .footer-section.left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center on mobile */
+  text-align: center;
 }
 
 .footer-logo {
-  height: 50px;
+  height: 40px; /* Smaller for mobile */
   margin-bottom: 10px;
 }
 
 .copyright {
-  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-size: 12px; /* Smaller for mobile */
 }
 
-/* Right Section: Social Media & Contact */
+/* Right Section (Social Media & Email) */
 .footer-section.right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center; /* Center on mobile */
+  text-align: center;
 }
 
-/* Social Media Icons */
 .social-icons {
   display: flex;
-  gap: 15px;
+  gap: 10px; /* Smaller gap for mobile */
   margin-bottom: 10px;
 }
 
 .social-icons a {
-  color: white;
-  font-size: 20px;
+  color: #fff;
+  font-size: 18px; /* Smaller icons for mobile */
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #8F9C57; /* Light green hover effect */
+  color: #8f9c57; /* Olive green hover effect */
 }
 
-/* Email Text */
 .footer-email {
-  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-size: 12px; /* Smaller for mobile */
 }
 
-/* Ensure Footer Stays at the Bottom */
-html, body, #root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
-}
-
-#root {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex-grow: 1; /* Pushes footer down */
-}
-
-/* Debugging Fix: Ensure No Parent Container Limits the Width */
-body, #root {
-  max-width: 100vw !important; /* Forces full screen width */
-}
-/* Existing footer styles remain unchanged */
-/* Add these new styles at the bottom of Footer.css */
-
+/* Developer Credit */
 .developer-credit {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 20px;
-  font-size: 0.9rem;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 10px; /* Smaller for mobile */
   color: #666;
+  width: 100%;
 }
 
 .developer-credit a {
@@ -121,4 +102,103 @@ body, #root {
 
 .developer-credit a:hover {
   color: #fff;
+}
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row; /* Side-by-side layout */
+    justify-content: space-between; /* Distribute content */
+    align-items: center; /* Align vertically */
+    padding: 0 20px; /* Slightly more padding */
+  }
+
+  .footer-section {
+    display: block; /* Show blank sections for spacing */
+    flex: 1; /* Equal spacing */
+  }
+
+  .footer-section.left {
+    align-items: flex-start; /* Left-align for tablet */
+    text-align: left;
+    flex: 1;
+  }
+
+  .footer-section.right {
+    align-items: flex-end; /* Right-align for tablet */
+    text-align: right;
+    flex: 1;
+  }
+
+  .footer-logo {
+    height: 50px; /* Slightly larger */
+  }
+
+  .copyright,
+  .footer-email {
+    font-size: 14px; /* Standard size for tablet */
+  }
+
+  .social-icons {
+    gap: 15px; /* Standard gap */
+  }
+
+  .social-icons a {
+    font-size: 20px; /* Standard size */
+  }
+
+  .developer-credit {
+    font-size: 12px; /* Slightly larger */
+  }
+}
+
+/* Desktop/Web (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .footer-content {
+    padding: 0 30px; /* More padding for desktop */
+  }
+
+  .footer-logo {
+    height: 60px; /* Full size for desktop */
+  }
+
+  .copyright,
+  .footer-email {
+    font-size: 16px; /* Larger for desktop */
+  }
+
+  .social-icons {
+    gap: 20px; /* Larger gap */
+  }
+
+  .social-icons a {
+    font-size: 24px; /* Larger icons */
+  }
+
+  .developer-credit {
+    font-size: 14px; /* Full size */
+  }
+}
+
+/* Ensure Footer Stays at Bottom */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1; /* Pushes footer down */
 }
