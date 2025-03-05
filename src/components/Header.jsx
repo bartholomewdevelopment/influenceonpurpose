@@ -69,7 +69,7 @@ const Header = () => {
         </nav>
       </div>
 
-      {/* LinkedIn Icon (Top Right) */}
+      {/* LinkedIn Icon (Top Right)
       <a
         href="https://www.linkedin.com"
         target="_blank"
@@ -77,7 +77,7 @@ const Header = () => {
         className="linkedin-icon"
       >
         <i className="bi bi-linkedin"></i>
-      </a>
+      </a> */}
     </header>
   );
 };
