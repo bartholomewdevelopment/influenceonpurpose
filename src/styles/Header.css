@@ -90,19 +90,39 @@
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #8F9C57; /* Match your navbar color */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: fit-content; /* Width adapts to content */
+    padding: 10px 5px; /* 10px top/bottom, 5px left/right */
+    z-index: 999;
+  }
+
   .navbar-nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove Bootstrap's default padding */
+    margin: 0; /* Remove any inherited margin */
+    width: 100%; /* Ensure it takes full container width */
   }
 
   .navbar-nav .nav-item {
-      padding: 5px 0;
+    padding: 5px 0; /* Vertical padding only */
+    margin: 0; /* Remove any inherited margin */
+    width: 100%; /* Full width for centering */
+    text-align: center; /* Center the text */
   }
 
   .navbar-nav .nav-link {
-      font-size: 16px; /* Slightly larger for mobile readability */
+    font-size: 16px; /* Slightly larger for mobile readability */
+    white-space: nowrap; /* Prevent text wrapping */
+    padding: 3px 0; /* Vertical padding only, no left/right */
+    margin: 0; /* Remove any inherited margin */
   }
 }
 
