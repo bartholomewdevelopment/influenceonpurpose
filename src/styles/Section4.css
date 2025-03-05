@@ -1,212 +1,189 @@
-/* Reset defaults for consistency */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base Footer Styles (Mobile-First) */
-.footer-container {
+.section4 {
+  display: flex;
+  flex-direction: column; /* Stack vertically by default (mobile) */
   width: 100%;
-  background-color: #000; /* Black background */
-  color: #fff;
-  padding: 20px 0; /* Vertical padding only */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  flex-shrink: 0;
+  min-height: 400px;
 }
 
-/* Footer Content */
-.footer-content {
+/* Left Side (Image) */
+.section4 .left-side {
   width: 100%;
-  max-width: 1200px; /* Caps width on large screens */
-  padding: 0 15px; /* Horizontal padding for mobile */
-  display: flex;
-  flex-direction: column; /* Stack vertically on mobile */
-  align-items: center;
-  gap: 20px; /* Space between sections */
+  height: 100%; /* Ensure it takes full height of its container */
+  min-height: 200px; /* Minimum height for mobile */
 }
 
-/* Generic Footer Section (Blank Sections) */
-.footer-section {
-  display: none; /* Hide blank sections on mobile by default */
+.section4 .left-side img {
+  width: 100%;
+  height: 100%; /* Fill the container */
+  object-fit: cover; /* Crop to fit without distortion */
+  filter: grayscale(100%);
+  display: block; /* Remove any default image whitespace */
 }
 
-/* Left Section (Logo & Copyright) */
-.footer-section.left {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center on mobile */
+/* Right Side (Content) */
+.section4 .right-side {
+  width: 100%;
+  background-color: #8f9c57; /* Olive green */
+  padding: 20px;
   text-align: center;
 }
 
-.footer-logo {
-  height: 40px; /* Smaller for mobile */
+.section4 .right-side h2 {
+  font-family: Arial, sans-serif;
+  font-size: 28px; /* Base size for mobile */
+  font-weight: bold;
+  color: #fff;
   margin-bottom: 10px;
 }
 
-.copyright {
+.section4 .right-side .quote {
   font-family: Arial, sans-serif;
-  font-size: 12px; /* Smaller for mobile */
+  font-style: italic;
+  font-size: 16px; /* Base size for mobile */
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0 10px;
 }
 
-/* Right Section (Social Media & Email) */
-.footer-section.right {
+.section4 .right-side .principles-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center on mobile */
-  text-align: center;
+  gap: 15px; /* Consistent spacing */
 }
 
-/* Contact Line (Icon + Email) */
-.contact-line {
+.section4 .right-side .principle {
+  background-color: #bfc89d; /* Lighter green */
+  border-radius: 25px; /* Slightly oval shape */
+  padding: 10px 15px;
+  margin: 0 auto;
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Cap for larger screens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center; /* Vertically align icon and email */
-  gap: 10px; /* Space between icon and email */
+  align-items: center;
 }
 
-.social-icon {
-  color: #fff;
-  font-size: 18px; /* Smaller for mobile */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-  color: #8f9c57; /* Olive green hover effect */
-}
-
-.footer-email {
+.section4 .right-side .principle .number {
   font-family: Arial, sans-serif;
-  font-size: 12px; /* Smaller for mobile */
-  margin: 0; /* Remove default margin */
-}
-
-/* Developer Credit */
-.developer-credit {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 15px;
-  font-family: Arial, sans-serif;
-  font-size: 10px; /* Smaller for mobile */
-  color: #666;
-  width: 100%;
-}
-
-.developer-credit a {
-  color: #888;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.developer-credit a:hover {
+  font-size: 36px; /* Base size for mobile */
+  font-weight: bold;
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0 15px;
+  flex-shrink: 0;
+}
+
+.section4 .right-side .principle .principle-content {
+  text-align: left;
+  flex-grow: 1;
+  color: #fff;
+}
+
+.section4 .right-side .principle .principle-content strong {
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Base size for mobile */
+  font-weight: bold;
+  color: #fff;
+  display: block;
+}
+
+.section4 .right-side .principle .principle-content p {
+  font-family: Arial, sans-serif;
+  font-size: 14px; /* Base size for mobile */
+  color: #fff;
+  margin: 5px 0 0;
+  word-wrap: break-word;
 }
 
 /* Tablet (min-width: 768px) */
 @media (min-width: 768px) {
-  .footer-content {
+  .section4 {
     flex-direction: row; /* Side-by-side layout */
-    justify-content: space-between; /* Distribute content */
-    align-items: center; /* Align vertically */
-    padding: 0 20px; /* Slightly more padding */
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
 
-  .footer-section {
-    display: block; /* Show blank sections for spacing */
-    flex: 1; /* Equal spacing */
+  .section4 .left-side,
+  .section4 .right-side {
+    flex: 1 0 50%; /* Equal split */
+    height: auto; /* Allow natural height */
   }
 
-  .footer-section.left {
-    align-items: flex-start; /* Left-align for tablet */
-    text-align: left;
-    flex: 1;
+  .section4 .left-side {
+    min-height: 400px; /* Taller for tablet */
   }
 
-  .footer-section.right {
-    align-items: flex-end; /* Right-align for tablet */
-    text-align: right;
-    flex: 1;
+  .section4 .right-side {
+    padding: 30px; /* Slightly more padding */
   }
 
-  .footer-logo {
-    height: 50px; /* Slightly larger */
+  .section4 .right-side h2 {
+    font-size: 36px; /* Larger for tablet */
   }
 
-  .copyright {
-    font-size: 14px; /* Standard size for tablet */
+  .section4 .right-side .quote {
+    font-size: 20px; /* Larger for tablet */
+    width: 80%; /* Slightly wider */
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .contact-line {
-    gap: 15px; /* Slightly larger gap */
+  .section4 .right-side .principle {
+    border-radius: 35px; /* More oval */
+    width: 80%; /* Slightly wider */
   }
 
-  .social-icon {
-    font-size: 20px; /* Standard size */
+  .section4 .right-side .principle .number {
+    font-size: 48px; /* Larger for tablet */
   }
 
-  .footer-email {
-    font-size: 14px; /* Standard size */
+  .section4 .right-side .principle .principle-content strong {
+    font-size: 22px;
   }
 
-  .developer-credit {
-    font-size: 12px; /* Slightly larger */
+  .section4 .right-side .principle .principle-content p {
+    font-size: 16px;
   }
 }
 
 /* Desktop/Web (min-width: 1024px) */
 @media (min-width: 1024px) {
-  .footer-content {
-    padding: 0 30px; /* More padding for desktop */
+  .section4 .left-side {
+    min-height: 500px; /* Taller for desktop */
   }
 
-  .footer-logo {
-    height: 60px; /* Full size for desktop */
+  .section4 .right-side {
+    padding: 40px; /* Full padding for desktop */
   }
 
-  .copyright {
-    font-size: 16px; /* Larger for desktop */
+  .section4 .right-side h2 {
+    font-size: 48px; /* Full size for desktop */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .contact-line {
-    gap: 20px; /* Larger gap */
+  .section4 .right-side .quote {
+    font-size: 24px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .social-icon {
-    font-size: 24px; /* Larger icons */
+  .section4 .right-side .principle {
+    border-radius: 50px; /* Full oval for desktop */
+    width: 50%; /* Fixed width for desktop */
   }
 
-  .footer-email {
-    font-size: 16px; /* Larger for desktop */
+  .section4 .right-side .principle .number {
+    font-size: 60px; /* Full size for desktop */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Full shadow */
   }
 
-  .developer-credit {
-    font-size: 14px; /* Full size */
+  .section4 .right-side .principle .principle-content strong {
+    font-size: 28px;
   }
-}
 
-/* Ensure Footer Stays at Bottom */
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
-#root {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-content {
-  flex-grow: 1; /* Pushes footer down */
+  .section4 .right-side .principle .principle-content p {
+    font-size: 20px;
+  }
 }

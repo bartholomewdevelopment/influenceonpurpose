@@ -88,13 +88,13 @@
   color: #0077b5; /* LinkedIn Blue */
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation (up to 768px) */
 @media (max-width: 768px) {
   .navbar-collapse {
     background-color: #8F9C57; /* Match your navbar color */
     border-radius: 0 0 15px 15px; /* Rounded bottom corners */
     position: absolute;
-    top: 100%;
+    top: 100%; /* Below the header */
     left: 50%;
     transform: translateX(-50%); /* Center it horizontally */
     width: fit-content; /* Width adapts to content */
@@ -123,6 +123,49 @@
     white-space: nowrap; /* Prevent text wrapping */
     padding: 3px 0; /* Vertical padding only, no left/right */
     margin: 0; /* Remove any inherited margin */
+  }
+}
+
+/* Tablet Navigation (768px to 991px) */
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #8F9C57; /* Match your navbar color */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    position: absolute;
+    top: 100%; /* Ensure it starts below the header */
+    left: 50%;
+    transform: translateX(-50%); /* Center it */
+    width: fit-content; /* Adapt to content */
+    padding: 10px 5px; /* Consistent padding */
+    z-index: 999;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Keep it vertical for tablet */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 5px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 3px 0;
+    margin: 0;
+  }
+
+  .navbar-toggler {
+    position: relative; /* Ensure it stays within the header */
+    top: auto; /* Reset any top positioning */
   }
 }
 

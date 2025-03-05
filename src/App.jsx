@@ -51,7 +51,6 @@ function App() {
           <Route path="/book" element={<Book />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
-          {/* Updated to use /resources instead of /blog */}
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/:slug" element={<BlogPostDetail />} />
           <Route path="/contact" element={<div>Contact Us (TBD)</div>} />

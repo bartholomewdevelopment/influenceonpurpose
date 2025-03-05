@@ -3,93 +3,121 @@
 /* Hero Section */
 .hero {
     width: 100%;
-    height: calc(60vh + 80px); /* Adjusted to include header height */
+    min-height: calc(60vh + 80px);
     background-size: cover;
-    background-position: center top; /* Align image to top */
+    background-position: center top;
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: center;
     align-items: center;
     color: white;
-    padding: 80px 5% 0; /* Push content below header, keep horizontal padding */
-    margin-top: 0; /* Ensure no inherited margin pushes it down */
+    padding: 80px 5% 0;
+    margin-top: 0;
+}
+
+/* Container for better control */
+.hero-container {
+    width: 100%;
+    max-width: 1200px; /* Prevents content from stretching too wide */
+    margin: 0 auto;
 }
 
 /* Hero Left Content */
 .hero-left {
-    width: 50%; /* Left half for text */
+    width: 100%; /* Changed from 50% to be more flexible */
+    max-width: 600px; /* Reasonable max width */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Ensures left alignment */
+    align-items: flex-start;
     text-align: left;
 }
 
 .hero h1 {
-    font-size: 4rem; /* Increased font size */
+    font-size: clamp(2rem, 4vw, 4rem); /* Responsive font size */
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 20px;
-    width: 70%; /* H1 fills about 70% of the left side */
-    line-height: 1.2; /* Improves readability */
+    margin-bottom: 1.5rem;
+    width: 100%;
+    line-height: 1.2;
 }
 
 /* Hero Button */
 .hero-button {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
     background-color: white;
     color: black;
     border: none;
     cursor: pointer;
-    height: 50px; /* Fixed height */
-    width: 250px; /* Slightly wider to keep text on one line */
-    overflow: hidden;
+    height: 50px;
+    width: clamp(180px, 25vw, 250px); /* Responsive width */
     padding: 0;
+    transition: all 0.3s ease; /* Smooth transitions */
 }
 
-/* Left section (80% width) */
+/* Button Text */
 .hero-button span {
-    flex: 4; /* Takes 80% of button width */
+    flex: 4;
     padding: 10px 15px;
     text-align: center;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap; /* Ensures text stays on one line */
+    white-space: nowrap;
     text-transform: uppercase;
     font-weight: bolder;
 }
 
-/* Right section (20% width) with arrow */
+/* Button Arrow */
 .hero-button .arrow {
-    flex: 1; /* Takes 20% of button width */
+    flex: 1;
     background-color: #8F9C57;
     color: black;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bolder; /* Makes arrow bolder */
-    font-size: 2rem; /* Increases arrow size */
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     padding: 0 12px;
 }
 
-/* Mobile Adjustments */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        min-height: calc(55vh + 80px);
+    }
+    
+    .hero-left {
+        max-width: 500px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero {
-        height: calc(50vh + 80px); /* Slightly shorter on mobile */
-        padding: 80px 5% 0;
+        min-height: calc(50vh + 80px);
+        padding: 80px 5% 20px;
     }
-
-    .hero h1 {
-        font-size: 2.5rem; /* Scale down for mobile */
-        width: 100%; /* Full width on smaller screens */
+    
+    .hero-left {
+        max-width: 100%;
+        padding: 0 10px;
     }
+}
 
+@media (max-width: 480px) {
+    .hero {
+        min-height: calc(45vh + 80px);
+        padding: 80px 3% 20px;
+    }
+    
     .hero-button {
-        width: 200px; /* Slightly smaller button */
-        font-size: 1.2rem;
+        height: 45px;
+    }
+    
+    .hero-button .arrow {
+        padding: 0 8px;
     }
 }

@@ -1,49 +1,58 @@
-import React from "react";
-import "../styles/Footer.css"; // Import Footer styles
-import logo from "../assets/logos/iopwhitelogo.png"; // Ensure correct path
+import React from 'react';
+import '../styles/Section4.css';
+import twoPeople from '../assets/images/twopeopleinoffice.jpg';
 
-const Footer = () => {
+const Section4 = () => {
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
-        {/* Left Blank Section */}
-        <div className="footer-section"></div>
-
-        {/* Left Side: Logo & Copyright */}
-        <div className="footer-section left">
-          <img src={logo} alt="Influence on Purpose" className="footer-logo" />
-          <p className="copyright">© 2025 Influence on Purpose. All rights reserved.</p>
-        </div>
-
-        {/* Right Side: Social Media & Email */}
-        <div className="footer-section right">
-          <div className="contact-line">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <i className="bi bi-linkedin"></i>
-            </a>
-            <p className="footer-email">contact@influenceonpurpose.com</p>
+    <section className="section4">
+      <div className="left-side">
+        <img src={twoPeople} alt="Two adults working together" />
+      </div>
+      <div className="right-side">
+        <h2>Universal Principles of Influence</h2>
+        <p className="quote">
+          "Leadership is a principle of influence that unlocks the potential of every individual in a group focused on a common purpose."
+        </p>
+        <div className="principles-container">
+          <div className="principle">
+            <span className="number">1</span>
+            <div className="principle-content">
+              <strong>Truth</strong>
+              <p>The courage and humility to go beyond individual or group realities.</p>
+            </div>
+          </div>
+          <div className="principle">
+            <span className="number">2</span>
+            <div className="principle-content">
+              <strong>Agency</strong>
+              <p>Understanding the power of choice, consequences and accountability.</p>
+            </div>
+          </div>
+          <div className="principle">
+            <span className="number">3</span>
+            <div className="principle-content">
+              <strong>Law of the Harvest</strong>
+              <p>Applying sustained, focused effort and commitment to achieve desired outcomes.</p>
+            </div>
+          </div>
+          <div className="principle">
+            <span className="number">4</span>
+            <div className="principle-content">
+              <strong>Love</strong>
+              <p>The power and importance of relationships, service and purpose.</p>
+            </div>
+          </div>
+          <div className="principle">
+            <span className="number">5</span>
+            <div className="principle-content">
+              <strong>Creation</strong>
+              <p>Creating value and solutions where there were none.</p>
+            </div>
           </div>
         </div>
-
-        {/* Right Blank Section */}
-        <div className="footer-section"></div>
       </div>
-
-      {/* Developer Credit */}
-      <div className="developer-credit">
-        <p>
-          Website built by{" "}
-          <a href="https://bartholomewdevelopment.com" target="_blank" rel="noopener noreferrer">
-            Bartholomew Development LLC
-          </a>{" "}
-          |{" "}
-          <a href="mailto:joseph@bartholomewdevelopment.com">
-            joseph@bartholomewdevelopment.com
-          </a>
-        </p>
-      </div>
-    </footer>
+    </section>
   );
 };
 
-export default Footer;
+export default Section4;
