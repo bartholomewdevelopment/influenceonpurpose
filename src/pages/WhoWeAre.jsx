@@ -74,6 +74,9 @@ const WhoWeAre = () => {
         </div>
       </section>
 
+      {/*Principles Section*/}
+      <Section4 />
+
       {/* Values Section */}
       <section className="values-section">
         <h2>Our Values</h2>
@@ -114,32 +117,32 @@ const WhoWeAre = () => {
         </div>
       </section>
 
+         {/* Vision Section */}
+        <section className="vision-section">
+          <h2>Our Vision</h2>
+          <p>Regenerative cultures will heal our society.</p>
+        </section>
+   
            {/* Mission Section */}
            <section className="mission-section">
-        <h2>Our Mission</h2>
-        <p>
-          We create winning relationships for all stakeholders—not as divisions or units, but as people. Unlocking greater fulfillment and accomplishments for those we serve enables our clients to do the same with their stakeholders.
-        </p>
-        <p>
-          We provide opportunities for our associates to do well by doing good across every spectrum of our lives, acting as a force for good throughout the communities we serve.
-        </p>
-        <p>
-          "Doing well and doing good are inextricably linked."
-        </p>
-        <p>
-          Our mission is to help leaders create and leverage healthy cultures that provide a powerful sense of purpose and a passion for accomplishing their goals.
-        </p>
-      </section>
-
-      {/* Vision Section */}
-      <section className="vision-section">
-        <h2>Our Vision</h2>
-        <p>Regenerative cultures will heal our society.</p>
-      </section>
+            <h2>Our Mission</h2>
+            <p>
+              We create winning relationships for all stakeholders—not as divisions or units, but as people. Unlocking greater fulfillment and accomplishments for those we serve enables our clients to do the same with their stakeholders.
+            </p>
+            <p>
+              We provide opportunities for our associates to do well by doing good across every spectrum of our lives, acting as a force for good throughout the communities we serve.
+            </p>
+            <p>
+              "Doing well and doing good are inextricably linked."
+            </p>
+            <p>
+              Our mission is to help leaders create and leverage healthy cultures that provide a powerful sense of purpose and a passion for accomplishing their goals.
+            </p>
+          </section>
 
 
-      {/* Previously Used Sections */}
-      <Section4 />
+
+      {/* Meet the Team Section */}
       <Section3 />
     </div>
   );
