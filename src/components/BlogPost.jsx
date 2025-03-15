@@ -3,14 +3,26 @@ import '../styles/BlogStyles.css';
 import blogarrow2 from '../assets/images/blogarrow2.jpg';
 import { Helmet } from 'react-helmet';
 
+// Add imports for the tree-related images used in blog post ID 2
+import originalTreeMissionVisionValues from '../assets/images/originaltreemissionvisionvalues.png';
+import originalTreeSteps from '../assets/images/originaltreesteps.png';
+import treeImage from '../assets/images/treeimage.jpeg';
+
 const BlogPost = ({ post }) => {
   const renderContent = (content) => {
+    // Normalize the content by replacing newlines and trimming whitespace
     const normalizedContent = content.replace(/(\r\n|\r|\n)/g, '\n').trim();
-    const paragraphs = normalizedContent.split(/\n\s*\n/);
-    console.log('Raw content:', content);
-    console.log('Normalized content:', normalizedContent);
-    console.log('Paragraphs:', paragraphs);
 
+    // Check if the content contains HTML tags (e.g., <img>, <p>, etc.)
+    const containsHtml = /<[a-z][\s\S]*>/i.test(normalizedContent);
+
+    if (containsHtml) {
+      // If the content contains HTML, render it using dangerouslySetInnerHTML
+      return <div dangerouslySetInnerHTML={{ __html: normalizedContent }} />;
+    }
+
+    // Otherwise, parse markdown-like syntax
+    const paragraphs = normalizedContent.split(/\n\s*\n/);
     return paragraphs.map((paragraph, index) => {
       const trimmed = paragraph.trim();
       if (!trimmed) return null;
@@ -27,19 +39,21 @@ const BlogPost = ({ post }) => {
 
   const imageMap = {
     './assets/images/blogarrow2.jpg': blogarrow2,
+    '../assets/images/originaltreemissionvisionvalues.png': originalTreeMissionVisionValues,
+    '../assets/images/originaltreesteps.png': originalTreeSteps,
+    '../assets/images/treeimage.jpeg': treeImage,
   };
 
   // Construct and log the share URL for debugging
   const blogUrl = `${window.location.origin}/resources/${post.slug}`;
   const encodedUrl = encodeURIComponent(blogUrl);
   const encodedTitle = encodeURIComponent(post.title);
-  console.log('Blog URL:', blogUrl); // Check if this looks correct
+  console.log('Blog URL:', blogUrl);
   console.log('Encoded URL:', encodedUrl);
   console.log('Encoded Title:', encodedTitle);
 
   return (
     <article>
-      {/* Move Helmet inside the component */}
       <Helmet>
         <meta property="og:title" content={post.title} />
         <meta property="og:url" content={blogUrl} />

@@ -1,4 +1,15 @@
-import blogarrow2 from '../assets/images/blogarrow2.jpg'; // Confirmed working for post 1
+import blogarrow2 from '../assets/images/blogarrow2.jpg';
+import principles from '../assets/images/treewithsteps.jpeg';
+import weakness from '../assets/images/muscle.png';
+import mission from '../assets/images/mission.png';
+import power from '../assets/images/power.png';
+import leadership from '../assets/images/leadership.png';
+import trap from '../assets/images/trap.png';
+
+// Add these imports for the tree-related images
+import originalTreeMissionVisionValues from '../assets/images/originaltreemissionvisionvalues.png';
+import originalTreeSteps from '../assets/images/originaltreesteps.png';
+import treeImage from '../assets/images/treewithsteps.jpeg';
 
 const blogPosts = [
   {
@@ -56,117 +67,107 @@ const blogPosts = [
     excerpt: "How principles can anchor and sustain a thriving company culture.",
     date: "2019-09-09",
     author: "John Baker",
-    image: blogarrow2, // Placeholder until you provide the tree painting
+    image: principles,
     content: `
-      Many years ago, I was watching a presentation given by a mentor of mine. He was explaining the crucial role of values, vision, and mission as a foundation for the strategic planning process. On a flip chart, he drew a diagram of a triangle with three levels. In this way he explained how values provide a structural foundation, vision is built on values, and mission was a strategic expression of the vision.
+      <p>Many years ago, I was watching a presentation given by a mentor of mine. He was explaining the crucial role of values, vision, and mission as a foundation for the strategic planning process. On a flip chart, he drew a diagram of a triangle with three levels. In this way he explained how values provide a structural foundation, vision is built on values, and mission was a strategic expression of the vision.</p>
 
-      As I watched the presentation from the back of the room, I got a different picture. I saw organizations as growing, living things. Values bring life into the organization, vision brings unity and direction, mission is the work of meeting the needs of the stakeholders. I drew a rough picture in my notes that looked something like this:
+      <p>As I watched the presentation from the back of the room, I got a different picture. I saw organizations as growing, living things. Values bring life into the organization, vision brings unity and direction, mission is the work of meeting the needs of the stakeholders. I drew a rough picture in my notes that looked something like this:</p>
 
-      *[Imagine a rough sketch of a tree here]*
+      <img src="${originalTreeMissionVisionValues}" alt="Rough sketch of a tree" style="max-width: 100%; height: auto;">
 
-      If you use your imagination, you may be able to see I was picturing a tree.
+      <p>If you use your imagination, you may be able to see I was picturing a tree.</p>
 
-      ### The Roots: Values
+      <h3>The Roots: Values</h3>
+      <p>The roots represent values. These provide the anchor for the organization. They are non-negotiable. They not only provide the foundation for your business, they shape how you live your life. I came to define values as: principle centered ideas by which you measure the worth of actions interactions and outcomes.</p>
 
-      The roots represent values. These provide the anchor for the organization. They are non-negotiable. They not only provide the foundation for your business, they shape how you live your life. I came to define values as: principle centered ideas by which you measure the worth of actions interactions and outcomes.
+      <h3>The Trunk: Vision</h3>
+      <p>The trunk of the tree represents vision. As you look to the future, how will the organization be described? This is the challenge to become. The company’s vision is that compelling picture that makes the work worthwhile. As the leader expresses the vision, associates can see and determine for themselves if this is a work they want to be engaged in. The definition of vision is: the desired reality to come.</p>
 
-      ### The Trunk: Vision
+      <h3>The Branches: Mission</h3>
+      <p>The mission is a clear statement of what is required for all stakeholders if you are to accomplish the vision. A mission should take into consideration, customers, employees, owners/investors, business partners and or vendors, and the community. A mission that only recognizes one stakeholder group will not be sustainable. The mission is defined as: the shared purpose that serves all stakeholders. A well-defined mission provides the transition from aspirational to strategic.</p>
 
-      The trunk of the tree represents vision. As you look to the future, how will the organization be described? This is the challenge to become. The company’s vision is that compelling picture that makes the work worthwhile. As the leader expresses the vision, associates can see and determine for themselves if this is a work they want to be engaged in. The definition of vision is: the desired reality to come.
+      <p>Over the years, the model expanded to show the strategic process more clearly. From the main branches of the tree, secondary and tertiary branches continue. The secondary branches represent the plans created to serve the needs of the stakeholders they extend from. Likewise, the tertiary branches represent the practices developed to execute those plans.</p>
 
-      ### The Branches: Mission
+      <p>Unlike the values represented by the roots, plans and practices are very negotiable. Where the roots become permanent and provide consistent nourishment over time, the branches can and should be pruned regularly.</p>
 
-      The mission is a clear statement of what is required for all stakeholders if you are to accomplish the vision. A mission should take into consideration, customers, employees, owners/investors, business partners and or vendors, and the community. A mission that only recognizes one stakeholder group will not be sustainable. The mission is defined as: the shared purpose that serves all stakeholders. A well-defined mission provides the transition from aspirational to strategic.
+      <p>The significance of this model goes beyond typical strategic planning. Fully understood, the model provides a way to plan and grow the culture you need to accomplish your mission.</p>
 
-      Over the years, the model expanded to show the strategic process more clearly. From the main branches of the tree, secondary and tertiary branches continue. The secondary branches represent the plans created to serve the needs of the stakeholders they extend from. Likewise, the tertiary branches represent the practices developed to execute those plans.
+      <p>One day I was explaining the model to a client. I told him he could think of the culture of his company similar to the use of the word in the terms horticulture or agriculture. Leaders can cultivate and nurture a culture perfectly designed to get the results they need to accomplish their goals and sustain their success. He suggested the term “busni-culture.” I’m not sure if the term will catch on, I knew he got the picture.</p>
 
-      Unlike the values represented by the roots, plans and practices are very negotiable. Where the roots become permanent and provide consistent nourishment over time, the branches can and should be pruned regularly.
+      <p>When I knew I wanted the tree to be a logo for my business, I found a clip art version that served the purpose of showing all of the components of the model:</p>
 
-      The significance of this model goes beyond typical strategic planning. Fully understood, the model provides a way to plan and grow the culture you need to accomplish your mission.
+      <img src="${originalTreeSteps}" alt="Clip art tree showing roots, trunk, and branches" style="max-width: 100%; height: auto;">
 
-      One day I was explaining the model to a client. I told him he could think of the culture of his company similar to the use of the word in the terms horticulture or agriculture. Leaders can cultivate and nurture a culture perfectly designed to get the results they need to accomplish their goals and sustain their success. He suggested the term “busni-culture.” I’m not sure if the term will catch on, I knew he got the picture.
+      <p>Over time, I came to understand the model gives a good description of an organization’s unique culture. Leaders feel empowered knowing culture is definable and is something they can influence. However, there was something in the early years I hadn’t gotten a handle on.</p>
 
-      When I knew I wanted the tree to be a logo for my business, I found a clip art version that served the purpose of showing all of the components of the model:
+      <h3>The Soil: Principles</h3>
+      <p>As I have worked with a variety of organizations and individuals, I’ve come to notice they have both unique differences and common traits. The tree in the model effectively represents the organization. However, just as a tree has to be rooted in rich soil to receive the nourishment it needs to grow, each organization needs values that draw from sound principles to gain and sustain vitality.</p>
 
-      *[Imagine a clip art tree showing roots, trunk, and branches]*
+      <p>Many years ago, in a meeting with a CEO, our conversation included a discussion about core values. I explained there is a difference between values and principles. Values are unique to the individual or organization as described above. Principles exist outside of the individual or organization. The ability to sustain success as an organization is largely determined by how well their values are rooted in sound principle.</p>
 
-      Over time, I came to understand the model gives a good description of an organization’s unique culture. Leaders feel empowered knowing culture is definable and is something they can influence. However, there was something in the early years I hadn’t gotten a handle on.
+      <p>This CEO stopped and pondered. He said, “I’ll have to think about that.” He, like many others, thought of values and principles as meaning essentially the same thing.</p>
 
-      ### The Soil: Principles
+      <p>It’s easy to see values as the absolute foundation when you don’t see beyond the boundaries of your own organization. Principle is defined as “A fundamental truth or proposition that serves as a foundation for a system of beliefs or behavior or for a chain of reasoning.” Oxford Dictionary.</p>
 
-      As I have worked with a variety of organizations and individuals, I’ve come to notice they have both unique differences and common traits. The tree in the model effectively represents the organization. However, just as a tree has to be rooted in rich soil to receive the nourishment it needs to grow, each organization needs values that draw from sound principles to gain and sustain vitality.
+      <p>It’s important to understand the difference between values and principles. Our values, in and of themselves, can be constructive, neutral or destructive. For example: the value of honesty based in pride can take you no further than your own reality. Honesty motivated by humility can lead you to the truth. Honesty motivated by arrogance or selfishness (pride) can be destructive.</p>
 
-      Many years ago, in a meeting with a CEO, our conversation included a discussion about core values. I explained there is a difference between values and principles. Values are unique to the individual or organization as described above. Principles exist outside of the individual or organization. The ability to sustain success as an organization is largely determined by how well their values are rooted in sound principle.
+      <p>Honesty is the value; pride and humility are character traits; individual reality is the counterfeit; truth is the principle. In other words, in order for the value of honesty to prove a sustainable source of nourishment to your organization, it must be rooted in the principle of truth. You will not get to the truth if your pride will not allow you to see beyond your own perspective (reality).</p>
 
-      This CEO stopped and pondered. He said, “I’ll have to think about that.” He, like many others, thought of values and principles as meaning essentially the same thing.
+      <h3>Four Universal Principles</h3>
+      <p>There are four principles identified as common to any organization or individual regardless of age, race, gender, region or country. The above example points out truth as one of those principles. The other three are work, agency, and love. Though they may be expressed very differently, these four principles are present in and important to any successful organization around the world. To the degree they can be identified and nourished, any culture can be strengthened.</p>
 
-      It’s easy to see values as the absolute foundation when you don’t see beyond the boundaries of your own organization. Principle is defined as “A fundamental truth or proposition that serves as a foundation for a system of beliefs or behavior or for a chain of reasoning.” Oxford Dictionary.
+      <h4>Truth: The Courage and Humility to Go Beyond Realities</h4>
+      <p>Truth: the courage and humility to go beyond individual and group realities. The feedback you receive from others consists of the perceptions of people who interact with you. To those who express these perceptions, they are realities. Understanding this helps us to be aware of how important these perceptions are to those who shared them. This is a good start.</p>
 
-      It’s important to understand the difference between values and principles. Our values, in and of themselves, can be constructive, neutral or destructive. For example: the value of honesty based in pride can take you no further than your own reality. Honesty motivated by humility can lead you to the truth. Honesty motivated by arrogance or selfishness (pride) can be destructive.
+      <p>The statement “perceptions are realities” is often made in order to state that a situation is unchangeable or that a circumstance is insurmountable. Certainly, perceptions lead to realities, however, there is more to the story. Though perceptions are realities, realities are not necessarily true. Truth is found only after having the humility and the courage to challenge realities. This distinction illustrates that pride leads to self-limiting realities and humility and courage can lead to truth.</p>
 
-      Honesty is the value; pride and humility are character traits; individual reality is the counterfeit; truth is the principle. In other words, in order for the value of honesty to prove a sustainable source of nourishment to your organization, it must be rooted in the principle of truth. You will not get to the truth if your pride will not allow you to see beyond your own perspective (reality).
+      <h4>Work: Applying Focused, Sustained Effort</h4>
+      <p>The principle of work comes from a concept sometimes known as “the law of the harvest.” A basic example of this principle is understanding what is required for production of fruit. If you want to have an apple, an apple seed must be planted. The soil will need to have sufficient nutrients. The seed and growing plant will require watering and tending to. As the tree grows, it will need to be nurtured and cared for. As the tree matures it will yield the fruit it is designed to produce. The principle of work is more than just having or doing a job, it is fundamental to any worthwhile accomplishment.</p>
 
-      ### Four Universal Principles
+      <p>Work is described as “The magic by which dreams become reality.” Gordon B. Hinckley.</p>
 
-      There are four principles identified as common to any organization or individual regardless of age, race, gender, region or country. The above example points out truth as one of those principles. The other three are work, agency, and love. Though they may be expressed very differently, these four principles are present in and important to any successful organization around the world. To the degree they can be identified and nourished, any culture can be strengthened.
+      <p>To quote J. Richard Clarke, “We work to earn a living, that is true, but as we toil, let us also remember that we are building a life. Our work determines what that life will be.”</p>
 
-      #### Truth: The Courage and Humility to Go Beyond Realities
+      <p>Neil A. Maxwell said, “... work is always a spiritual necessity even if, for some, work is not an economic necessity.”</p>
 
-      Truth: the courage and humility to go beyond individual and group realities. The feedback you receive from others consists of the perceptions of people who interact with you. To those who express these perceptions, they are realities. Understanding this helps us to be aware of how important these perceptions are to those who shared them. This is a good start.
+      <p>As I have worked throughout my life to provide for myself and my family, I can look back not only on what has been accomplished but how it has contributed to who I am. This then is my advice: work not only for what you would accomplish but for who you would become</p>
 
-      The statement “perceptions are realities” is often made in order to state that a situation is unchangeable or that a circumstance is insurmountable. Certainly, perceptions lead to realities, however, there is more to the story. Though perceptions are realities, realities are not necessarily true. Truth is found only after having the humility and the courage to challenge realities. This distinction illustrates that pride leads to self - limiting realities and humility and courage can lead to truth.
+      <h4>Agency: Understanding Choice and Consequences</h4>
+      <p>Agency is the ability and privilege to choose and act for ourselves.</p>
 
-      #### Work: Applying Focused, Sustained Effort
+      <p>As leaders it is important not only to take ownership of our own choices and their consequences, we need to respect that each of our stakeholders (employees, customers, etc.) choose each day to be engaged with us or not. Acknowledging agency helps leaders work to influence others and avoid the trap of trying to control.</p>
 
-      The principle of work comes from a concept sometimes known as “the law of the harvest.” A basic example of this principle is understanding what is required for production of fruit. If you want to have an apple, an apple seed must be planted. The soil will need to have sufficient nutrients. The seed and growing plant will require watering and tending to. As the tree grows, it will need to be nurtured and cared for. As the tree matures it will yield the fruit it is designed to produce. The principle of work is more than just having or doing a job, it is fundamental to any worthwhile accomplishment.
+      <p>In business as in life, alignment with a specific course and engagement in the work of that cause are a choice we make. Choice precedes and largely determines both direction and destination. When you choose a path, you choose the place it leads to.</p>
 
-      Work is described as “The magic by which dreams become reality.” Gordon B. Hinckley.
+      <h4>Love: The Power and Importance of Relationships</h4>
+      <p>The last of the four principles is probably the most powerful, the most unifying and the largest determiner of not only achieving but of defining success. This four-letter word is more likely to cause hard-nosed business leaders to squirm with discomfort than any other.</p>
 
-      To quote J. Richard Clarke, “We work to earn a living, that is true, but as we toil, let us also remember that we are building a life. Our work determines what that life will be.”
+      <p>I find it makes it easier to discuss and to understand when we talk about the common expressions of love in the business environment. Words like civility, respect, forgiveness and sacrifice are easier to identify in our organizations. It’s also easier to see their impact on creating a vital culture and therefore ultimate success.</p>
 
-      Neil A. Maxwell said, “... work is always a spiritual necessity even if, for some, work is not an economic necessity.”
+      <p>I have noticed for many years and taught my clients: disrespect will always cost you money. Though this is a hard-hitting fact, the cost in dollars in only a small part of the cost when disrespect is expressed or felt. It is important to understand financial loss as a lagging indicator of disrespect realized downstream in the value chain. The earlier signs will be loss of alignment and engagement in the form of demoralization or resentment. When people feel disrespected, the driving agenda in their mind is to get back their dignity.</p>
 
-      As I have worked throughout my life to provide for myself and my family, I can look back not only on what has been accomplished but how it has contributed to who I am. This then is my advice: work not only for what you would accomplish but for who you would become
+      <h3>Bringing It All Together</h3>
+      <p>Overall, the organizational model of the tree represents the ability to cultivate life and vitality in your organization.</p>
 
-      #### Agency: Understanding Choice and Consequences
+      <p>Over time this model served to help leaders develop a vision for their organizations and act on the culture they needed to succeed. The more I did this work, the more I felt the model needed to be an expression of life and vitality. I also came to understand the importance of the soil and not just a tree suspended in air.</p>
 
-      Agency is the ability and privilege to choose and act for ourselves.
+      <p>Look back at the triangle model of values, vision and mission. The hard lines of the structure make it look self-contained with no need for, or acknowledgement of, outside forces. Look now at the model of the tree. The model reaches down for strength and security, it reaches up for growth and expression. Reaching down it finds strength and stability in sound principles. Reaching out it experiences growth and bears fruit in serving stakeholders.</p>
 
-      As leaders it is important not only to take ownership of our own choices and their consequences, we need to respect that each of our stakeholders (employees, customers, etc.) choose each day to be engaged with us or not. Acknowledging agency helps leaders work to influence others and avoid the trap of trying to control.
+      <p>Fortunately, I have a daughter who is a wonderful artist. I called her and described this model and how I use it to help leaders build the organizational culture they need. I asked her if she could paint me a logo. In addition to the tree itself, I asked her to show the soil as a rich and necessary part of the picture. Below is the painting she created. I couldn’t be more pleased. It shows the health and vitality of the tree in all of its parts. It also shows the richness of the soil.</p>
 
-      In business as in life, alignment with a specific course and engagement in the work of that cause are a choice we make. Choice precedes and largely determines both direction and destination. When you choose a path, you choose the place it leads to.
+      <img src="${treeImage}" alt="Painting of a tree with rich soil" style="max-width: 100%; height: auto;">
 
-      #### Love: The Power and Importance of Relationships
-
-      The last of the four principles is probably the most powerful, the most unifying and the largest determiner of not only achieving but of defining success. This four - letter word is more likely to cause hard-nosed business leaders to squirm with discomfort than any other.
-
-      I find it makes it easier to discuss and to understand when we talk about the common expressions of love in the business environment. Words like civility, respect, forgiveness and sacrifice are easier to identify in our organizations. It’s also easier to see their impact on creating a vital culture and therefore ultimate success.
-
-      I have noticed for many years and taught my clients: disrespect will always cost you money. Though this is a hard-hitting fact, the cost in dollars in only a small part of the cost when disrespect is expressed or felt. It is important to understand financial loss as a lagging indicator of disrespect realized downstream in the value chain. The earlier signs will be loss of alignment and engagement in the form of demoralization or resentment. When people feel disrespected, the driving agenda in their mind is to get back their dignity.
-
-      ### Bringing It All Together
-
-      Overall, the organizational model of the tree represents the ability to cultivate life and vitality in your organization.
-
-      Over time this model served to help leaders develop a vision for their organizations and act on the culture they needed to succeed. The more I did this work, the more I felt the model needed to be an expression of life and vitality. I also came to understand the importance of the soil and not just a tree suspended in air.
-
-      Look back at the triangle model of values, vision and mission. The hard lines of the structure make it look self - contained with no need for, or acknowledgement of, outside forces. Look now at the model of the tree. The model reaches down for strength and security, it reaches up for growth and expression. Reaching down it finds strength and stability in sound principles. Reaching out it experiences growth and bears fruit in serving stakeholders.
-
-      Fortunately, I have a daughter who is a wonderful artist. I called her and described this model and how I use it to help leaders build the organizational culture they need. I asked her if she could paint me a logo. In addition to the tree itself, I asked her to show the soil as a rich and necessary part of the picture. Below is the painting she created. I couldn’t be more pleased. It shows the health and vitality of the tree in all of its parts. It also shows the richness of the soil.
-
-      *[Imagine a painting of a tree with rich soil]*
-
-      With the help of clients, mentors, advisors, my daughter’s artistic vision, and a very talented friend who helped me see my business from a marketing perspective, that early sketch has become a powerful model for organizational culture.
+      <p>With the help of clients, mentors, advisors, my daughter’s artistic vision, and a very talented friend who helped me see my business from a marketing perspective, that early sketch has become a powerful model for organizational culture.</p>
     `,
   },
-  {
+    {
     id: 3,
     title: "The Truth About Weakness",
     slug: "the-truth-about-weakness",
     excerpt: "A deep dive into embracing vulnerability as a strength.",
     date: "2019-09-03", // Updated from your document
     author: "John Baker",
-    image: blogarrow2, // Placeholder
+    image: weakness, // Placeholder
     content: `
       As I work with leadership coaching clients, one of the early steps in the process is evaluating the current effect of their influence on their stakeholders. One powerful way of doing this is through 360 surveys or collecting feedback from those who are impacted by the leader. While debriefing the survey report with the client, I’ve noticed an unintended problem caused by our current “gentle” language.
 
@@ -204,7 +205,7 @@ const blogPosts = [
     excerpt: "Demystifying mission statements and their real-world impact.",
     date: "2019-09-03", // Updated from your document
     author: "John Baker",
-    image: blogarrow2,
+    image: mission,
     content: `
       First, let’s establish a mutual understanding of terms. People often find themselves in a conversation, debating what they think are different sides of an issue, only to realize they agree in principle and are arguing terminology. Below is an understanding of common terms that don’t always have common meaning:
 
@@ -250,7 +251,7 @@ const blogPosts = [
     excerpt: "How miscommunication can wield unexpected influence.",
     date: "2019-09-03", // Updated from your document
     author: "John Baker",
-    image: blogarrow2,
+    image: power,
     content: `
       You don't understand... We’re a technology company; health care; construction; scientists; engineers; consultants; retail. You wouldn’t understand – we’re from the Southeast; Southwest; Midwest; Northwest; Northeast; New York City; Montana; China; India; Africa. You couldn’t possibly understand me I’m a millennial, baby boomer, gen Xer. Over the years, I enjoyed the opportunity of working with a great variety of people and organizations. Each one of them taught me something valuable. As diverse as these individuals are, they almost all share a number of things in common. Probably most notable (and predictable) is the announcement that they are completely different than anyone I have ever worked with before.
 
@@ -282,7 +283,7 @@ const blogPosts = [
     excerpt: "Navigating the shift from startup founder to corporate leader.",
     date: "2019-09-03", // Updated from your document
     author: "John Baker",
-    image: blogarrow2,
+    image: leadership,
     content: `
       Many leaders are faced with the challenge of taking their organizations to another level.
 
@@ -330,7 +331,7 @@ const blogPosts = [
     excerpt: "Pitfalls to avoid in building genuine trust with clients.",
     date: "2019-09-03", // Updated from your document
     author: "John Baker",
-    image: blogarrow2,
+    image: trap,
     content: `
       Many of us have had the experience of an employee or coworker entering our office and asking “Can I talk to you?” Often the next request is for an assurance of confidentiality. Though this seems like a simple and common interaction, what comes next has caused a dilemma for people at all levels of organizations. I have seen CEOs and front-line employees alike struggle to get out of this predicament. How you handle this situation will either enhance your credibility or damage it.
 
